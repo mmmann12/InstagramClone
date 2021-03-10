@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         if (ParseUser.getCurrentUser() != null) {
-            //goMainActivity();
+            //goMainActivity(); //comment it whenever you want to go to login screen
         }
 
         etUsername = findViewById(R.id.etUsername);
@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
                 goMainActivity();
-                Toast.makeText(LoginActivity.this, "Success!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Logged In!", Toast.LENGTH_SHORT).show();
             }
         });
     }
